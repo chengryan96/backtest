@@ -35,11 +35,13 @@ def get_crypto_data(top_of_book=False):
                                                       endDate=crypto_yaml['end_date'], resampleFreq=crypto_yaml['Freq'])
         # The intraday frequencies are specified using an integer followed by “Min” or “Hour”, for example “30Min” or “1Hour”.
     crypto_data_df = pd.DataFrame(crypto_data[0]['priceData'])
+    crypto_data_df = crypto_data_df.rename(
+        {'open': 'Open', 'close': 'Close', 'high': 'High', 'low': 'Low', 'volume': 'Volume'}, axis='columns')
     crypto_data_df.to_json(crypto_json_path + '/' +
                            crypto_data[0]['ticker']+'_'+crypto_yaml['Freq'])
 
 
-a = get_crypto_data(top_of_book=True)
+#a = get_crypto_data(top_of_book=False)
 #out = pd.read_json(os.path.join(crypto_json_path, 'btcusd_30Min'))
 
 
