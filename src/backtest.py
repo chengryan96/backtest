@@ -5,8 +5,10 @@ import os
 import pandas as pd
 crypto_json_path = os.path.abspath(os.path.join(
     (__file__), '..', '..', 'json', 'crypto'))
-btcusd_df = pd.read_json(os.path.join(crypto_json_path, 'btcusd_30Min'))
-
+stock_json_path = os.path.abspath(os.path.join(
+    (__file__), '..', '..', 'json', 'stockprice'))
+btcusd_df = pd.read_json(os.path.join(crypto_json_path, 'ethusd_30Min'))
+stock_df = pd.read_json(os.path.join(stock_json_path, 'GME_daily'))
 '''
 you can import any library 
 '''

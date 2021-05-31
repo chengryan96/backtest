@@ -1,0 +1,6 @@
+session: True
+api_key: 94804c8ade91d7d1da67b92a28df333c36490ad5
+ticker: 'GME'
+start_date: '2018-09-08'
+end_date: '2021-05-30'
+Freq: 'daily'

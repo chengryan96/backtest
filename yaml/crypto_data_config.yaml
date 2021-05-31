@@ -1,7 +1,7 @@
 session: True
 api_key: 94804c8ade91d7d1da67b92a28df333c36490ad5
-crypto: 'BTC'
+crypto: 'ETH'
 currency: 'USD'
-start_date: '2020-12-2'
-end_date: '2020-12-3'
+start_date: '2018-9-08'
+end_date: '2018-12-31'
 Freq: '30Min'

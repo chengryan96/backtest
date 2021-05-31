@@ -41,7 +41,7 @@ def get_crypto_data(top_of_book=False):
                            crypto_data[0]['ticker']+'_'+crypto_yaml['Freq'])
 
 
-#a = get_crypto_data(top_of_book=False)
+get_crypto_data(top_of_book=False)
 #out = pd.read_json(os.path.join(crypto_json_path, 'btcusd_30Min'))
 
 
