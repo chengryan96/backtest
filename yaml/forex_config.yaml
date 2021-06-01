@@ -1,0 +1,5 @@
+session: True
+api_key: HVL9J1FOUE4053HM
+from_symbol: 'USD'
+to_symbol: 'JPY'
+Freq: '60min'
